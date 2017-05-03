@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Post Disgrace",
+    "description": "switches Post Dispatch to Post Disgrace for fun and satire purposes only",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
